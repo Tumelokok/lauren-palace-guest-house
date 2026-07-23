@@ -942,5 +942,201 @@ Every guest should leave feeling that they received excellent value, outstanding
 
 The platform should reflect these values from the first click to the final checkout.
 
+---
+
+# 10. User Personas
+
+To build an exceptional hospitality platform, Lauren Palace Guest House must understand the people who will use it.
+
+Rather than designing for a generic audience, the platform is built around the needs, expectations, and behaviours of real guest types.
+
+These personas represent the primary groups of guests who interact with Lauren Palace Guest House and will guide future design, development, communication, and service decisions.
+
+---
+
+## Persona 1 – The Business Professional
+
+### Profile
+
+A working professional travelling to Vanderbijlpark for meetings, projects, conferences, or client visits.
+
+### Goals
+
+- Find accommodation quickly.
+- Book within a few minutes.
+- Stay somewhere clean, quiet, and reliable.
+- Receive immediate booking confirmation.
+- Access reliable Wi-Fi.
+- Check in with minimal hassle.
+
+### Frustrations
+
+- Complicated booking forms.
+- Hidden costs.
+- Slow confirmation emails.
+- Poor internet access.
+- Unclear room information.
+
+### Platform Requirements
+
+The platform should allow business travellers to:
+
+- Search availability immediately.
+- Complete bookings quickly.
+- Pay securely online.
+- Receive instant confirmations.
+- Access invoices when required.
+
+---
+
+## Persona 2 – The Family Visitor
+
+### Profile
+
+Parents or relatives visiting family members, attending celebrations, graduations, or spending time together.
+
+### Goals
+
+- Find comfortable accommodation.
+- Stay somewhere safe.
+- Easily compare room options.
+- Understand what is included.
+- Feel welcomed.
+
+### Frustrations
+
+- Confusing room descriptions.
+- Lack of photographs.
+- Uncertainty about amenities.
+- Poor communication.
+
+### Platform Requirements
+
+The website should clearly display:
+
+- Room photos
+- Facilities
+- Family-friendly amenities
+- Pricing
+- Availability
+- Contact information
+
+---
+
+## Persona 3 – The Couple
+
+### Profile
+
+Couples travelling for holidays, anniversaries, weddings, or weekend getaways.
+
+### Goals
+
+- Relax.
+- Enjoy beautiful accommodation.
+- Experience exceptional hospitality.
+- Book effortlessly.
+
+### Frustrations
+
+- Outdated websites.
+- Difficult booking processes.
+- Poor room presentation.
+
+### Platform Requirements
+
+The website should inspire confidence through:
+
+- Elegant photography.
+- Modern design.
+- Beautiful room pages.
+- Simple reservations.
+
+---
+
+## Persona 4 – The University Visitor
+
+### Profile
+
+Parents, guardians, lecturers, exam invigilators, and university visitors travelling to Vanderbijlpark.
+
+### Goals
+
+- Stay close to the university.
+- Book quickly.
+- Feel safe.
+- Enjoy a peaceful environment.
+
+### Platform Requirements
+
+The website should highlight:
+
+- Nearby universities.
+- Convenient location.
+- Secure accommodation.
+- Easy navigation.
+
+---
+
+## Persona 5 – The Returning Guest
+
+### Profile
+
+Guests who have stayed at Lauren Palace Guest House before and wish to return.
+
+### Goals
+
+- Book even faster than before.
+- Reuse saved information.
+- View previous bookings.
+- Receive loyalty rewards.
+- Feel recognised.
+
+### Platform Requirements
+
+The platform should support:
+
+- Guest accounts.
+- Booking history.
+- Saved guest details.
+- Exclusive offers.
+- Faster checkout.
+
+---
+
+## Shared Expectations
+
+Although every guest has different reasons for staying, they all expect the same core experience.
+
+Every guest expects:
+
+- Professional service.
+- Comfortable accommodation.
+- Transparent pricing.
+- Secure online payments.
+- Accurate room availability.
+- Fast booking confirmations.
+- Responsive communication.
+- Clean and modern facilities.
+- Friendly staff.
+- Excellent value for money.
+
+These expectations should guide every design decision and software feature developed for the Lauren Palace Guest House platform.
+
+---
+
+## Persona-Driven Development
+
+Future features should always be evaluated against these personas.
+
+Before implementing any functionality, the development team should ask:
+
+- Which persona benefits from this feature?
+- What problem does it solve?
+- Does it improve the guest experience?
+- Does it simplify the booking journey?
+- Does it strengthen trust in the Lauren Palace brand?
+
+If a feature does not provide clear value to at least one persona, its purpose should be reconsidered.
+
 
 > *"Deliver exceptional hospitality before the guest even arrives."*
