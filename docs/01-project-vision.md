@@ -656,5 +656,166 @@ It is a long-term business investment designed to improve hospitality, strengthe
 
 Every future feature should contribute towards achieving one or more of these objectives.
 
+---
+
+# 8. Problems We Solve
+
+Lauren Palace Guest House is being developed to solve real challenges experienced by guests, management, and daily business operations.
+
+Rather than creating another accommodation website, this platform is designed to remove friction throughout the entire guest journey while improving operational efficiency behind the scenes.
+
+Every feature developed for this platform should exist because it solves a genuine problem.
+
+---
+
+## Guest Challenges
+
+### Reliance on Third-Party Booking Platforms
+
+Many guests discover accommodation through third-party platforms that introduce additional complexity, limited communication, and unnecessary commission costs for the business.
+
+Guests often leave the booking process without building a direct relationship with the accommodation provider.
+
+Lauren Palace Guest House solves this by offering a trusted direct booking experience through its official website.
+
+---
+
+### Complicated Booking Experiences
+
+Many booking websites overwhelm guests with unnecessary information, advertisements, upselling, and confusing navigation.
+
+Guests simply want to:
+
+- Check availability
+- Compare rooms
+- Understand pricing
+- Book quickly
+- Receive confirmation
+
+Our platform will prioritise simplicity, clarity, and speed throughout the booking process.
+
+---
+
+### Limited Property Information
+
+Guests often struggle to understand what a property actually offers before arriving.
+
+Professional photography, detailed room descriptions, virtual tours, amenities, nearby attractions, and guest reviews will provide complete transparency before booking.
+
+Guests should arrive knowing exactly what to expect.
+
+---
+
+### Lack of Trust
+
+Booking accommodation requires confidence.
+
+Guests want reassurance that:
+
+- Their reservation is secure.
+- Their payment is protected.
+- The property is genuine.
+- Customer support is available when needed.
+
+Lauren Palace Guest House will establish trust through transparent communication, secure technology, verified reviews, and professional presentation.
+
+---
+
+## Business Challenges
+
+### High Commission Costs
+
+Third-party booking platforms charge significant commission fees on every reservation.
+
+While these platforms remain valuable marketing channels, increasing direct bookings allows Lauren Palace Guest House to retain more revenue and invest further in improving guest experiences.
+
+---
+
+### Limited Ownership of Customer Relationships
+
+Third-party platforms often become the primary communication channel between businesses and guests.
+
+Our platform allows Lauren Palace Guest House to build direct relationships through personalised communication, guest accounts, loyalty initiatives, and ongoing engagement.
+
+---
+
+### Manual Administrative Work
+
+Managing bookings manually increases the likelihood of:
+
+- Human error
+- Double bookings
+- Delayed confirmations
+- Inefficient reporting
+
+Automation will simplify operations while improving accuracy and reducing administrative workload.
+
+---
+
+## Operational Challenges
+
+### Availability Management
+
+Room availability should update automatically after every confirmed reservation.
+
+This prevents booking conflicts while providing guests with real-time availability.
+
+---
+
+### Payment Management
+
+Guests expect secure online payments that are fast, reliable, and transparent.
+
+The platform will integrate trusted South African payment providers while maintaining industry-standard security practices.
+
+---
+
+### Communication
+
+Guests should never wonder what happens next.
+
+The platform will automatically communicate important updates including:
+
+- Booking confirmations
+- Payment confirmations
+- Check-in instructions
+- Check-out reminders
+- Booking modifications
+- Cancellation updates
+
+Clear communication reduces uncertainty and improves the overall guest experience.
+
+---
+
+## Long-Term Challenges
+
+As Lauren Palace continues to grow, managing operations manually becomes increasingly difficult.
+
+The platform is designed to scale alongside the business by supporting:
+
+- Additional rooms
+- New accommodation offerings
+- Multiple properties
+- Additional staff
+- Increased booking volumes
+- New hospitality services
+
+Scalability is considered from the very beginning rather than added later.
+
+---
+
+## Our Solution
+
+Lauren Palace Guest House combines hospitality and technology to deliver a platform that is:
+
+- Easy for guests to use.
+- Efficient for staff to manage.
+- Scalable for future growth.
+- Reliable for daily operations.
+- Secure for online transactions.
+- Consistent with the Lauren Palace brand.
+
+Every future feature should solve a real problem while making the experience better for both guests and management.
+
 
 > *"Deliver exceptional hospitality before the guest even arrives."*
