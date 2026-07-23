@@ -817,5 +817,130 @@ Lauren Palace Guest House combines hospitality and technology to deliver a platf
 
 Every future feature should solve a real problem while making the experience better for both guests and management.
 
+---
+
+# 9. Target Audience
+
+Lauren Palace Guest House is designed to serve a diverse range of guests seeking comfortable, secure, and high-quality short-term accommodation in Vanderbijlpark.
+
+Rather than attempting to serve every type of traveller equally, the platform focuses on understanding the needs of its primary audiences and delivering experiences tailored to those needs.
+
+Understanding our guests allows us to design better services, improve communication, and create a booking experience that feels intuitive and personal.
+
+---
+
+## Primary Audience
+
+### Business Travellers
+
+Professionals visiting Vanderbijlpark for work require accommodation that is reliable, comfortable, and efficient.
+
+Their priorities include:
+
+- Fast online booking
+- Secure payments
+- Reliable Wi-Fi
+- Quiet working environment
+- Comfortable rooms
+- Flexible check-in where possible
+- Professional customer service
+
+For many business travellers, time is valuable. The booking process should therefore be fast, clear, and dependable.
+
+---
+
+### Families
+
+Families visiting relatives, attending celebrations, or travelling together require spacious, welcoming accommodation.
+
+Their priorities include:
+
+- Comfortable rooms
+- Safe surroundings
+- Friendly service
+- Convenient location
+- Simple booking process
+- Excellent value
+
+The website should make it easy for families to compare room options and understand exactly what is included in their stay.
+
+---
+
+### Couples
+
+Couples often look for peaceful accommodation that provides privacy, comfort, and a relaxing atmosphere.
+
+Their priorities include:
+
+- Elegant rooms
+- Quiet surroundings
+- Beautiful presentation
+- Easy reservations
+- Exceptional hospitality
+
+The digital experience should reflect the same elegance they expect during their stay.
+
+---
+
+### Leisure Travellers
+
+Guests exploring Vanderbijlpark or the surrounding region require accommodation that is trustworthy, convenient, and enjoyable.
+
+The platform should provide:
+
+- Local recommendations
+- Nearby attractions
+- Property gallery
+- Amenities
+- Guest reviews
+- Clear pricing
+
+---
+
+## Secondary Audience
+
+Lauren Palace Guest House also welcomes:
+
+- University visitors
+- Parents visiting students
+- International travellers
+- Event attendees
+- Wedding guests
+- Contractors
+- Government officials
+- Sports teams
+- Medical visitors
+- Temporary accommodation guests
+
+Each audience may have different needs, but all should receive the same standard of hospitality.
+
+---
+
+## Guest Expectations
+
+Regardless of why they visit, every guest expects:
+
+- A professional website
+- Simple navigation
+- Transparent pricing
+- Secure online payments
+- Accurate room availability
+- Comfortable accommodation
+- Friendly customer service
+- Fast communication
+- Reliable booking confirmation
+
+Meeting these expectations consistently builds trust in the Lauren Palace brand.
+
+---
+
+## Our Commitment to Every Guest
+
+Lauren Palace Guest House is committed to creating a welcoming experience for every visitor, regardless of the purpose of their stay.
+
+Every guest should leave feeling that they received excellent value, outstanding service, and genuine hospitality.
+
+The platform should reflect these values from the first click to the final checkout.
+
 
 > *"Deliver exceptional hospitality before the guest even arrives."*
