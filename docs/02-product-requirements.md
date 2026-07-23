@@ -1231,3 +1231,329 @@ Instead, it should compete on:
 
 By focusing on these strengths, Lauren Palace can provide a booking experience that feels more personal and memorable than a large online travel marketplace.
 
+---
+
+# 4. Airbnb Analysis
+
+## Overview
+
+Airbnb is a global accommodation marketplace focused on unique stays and personalised travel experiences. Unlike traditional hotel booking platforms, Airbnb emphasises storytelling, authenticity, and local experiences.
+
+---
+
+## Strengths
+
+- Exceptional photography.
+- Strong storytelling.
+- Clean and modern interface.
+- Interactive maps.
+- Personal host profiles.
+- Excellent mobile experience.
+- Transparent pricing.
+- Wishlist functionality.
+- Detailed property descriptions.
+
+---
+
+## Weaknesses
+
+- Quality varies significantly between properties.
+- Cleaning fees can increase costs unexpectedly.
+- Booking rules differ between hosts.
+- Less standardised guest experience.
+
+---
+
+## Opportunities for Lauren Palace
+
+Lauren Palace should adopt:
+
+- High-quality photography.
+- Emotional storytelling.
+- Local recommendations.
+- Beautiful room presentation.
+- Clean minimalist design.
+
+Lauren Palace should improve by offering:
+
+- Consistent hospitality.
+- Professional service.
+- Transparent pricing.
+- Standardised guest experience.
+
+---
+
+## Key Takeaways
+
+Airbnb demonstrates that guests book experiences, not simply accommodation.
+
+Lauren Palace should combine professional hospitality with authentic storytelling to create memorable guest experiences.
+
+---
+
+# 5. Marriott Analysis
+
+## Overview
+
+Marriott is one of the world's largest hotel brands, recognised for premium accommodation, consistent service, and an extensive loyalty programme.
+
+---
+
+## Strengths
+
+- Premium branding.
+- Excellent room presentation.
+- Professional photography.
+- Consistent design language.
+- Strong loyalty programme.
+- Business traveller focus.
+
+---
+
+## Weaknesses
+
+- Corporate appearance.
+- Less personal experience.
+- Large amount of information.
+- Booking flow can feel lengthy.
+
+---
+
+## Opportunities for Lauren Palace
+
+Lauren Palace should adopt:
+
+- Premium visual presentation.
+- Consistent branding.
+- Professional room pages.
+- High hospitality standards.
+
+Lauren Palace should improve by maintaining a more welcoming and personal experience.
+
+---
+
+## Key Takeaways
+
+Luxury is communicated through consistency rather than complexity.
+
+---
+
+# 6. Hilton Analysis
+
+## Overview
+
+Hilton focuses on premium hospitality supported by a sophisticated digital booking experience and strong guest loyalty programme.
+
+---
+
+## Strengths
+
+- Excellent booking engine.
+- Strong member benefits.
+- Professional interface.
+- Reliable user experience.
+- Secure booking process.
+
+---
+
+## Weaknesses
+
+- Membership focus can discourage guest checkout.
+- Information density.
+- Corporate feel.
+
+---
+
+## Opportunities for Lauren Palace
+
+Lauren Palace should implement:
+
+- Fast booking flow.
+- Guest accounts.
+- Future loyalty programme.
+- Mobile-first design.
+- Secure payment process.
+
+---
+
+## Key Takeaways
+
+Guest loyalty should be earned through exceptional experiences rather than mandatory membership.
+
+---
+
+# 7. Protea Hotels Analysis
+
+## Overview
+
+Protea Hotels is one of South Africa's best-known hotel brands, offering accommodation suited to both leisure and business travellers.
+
+---
+
+## Strengths
+
+- Strong local brand recognition.
+- Professional hospitality.
+- Local market understanding.
+- Consistent accommodation standards.
+
+---
+
+## Weaknesses
+
+- Less immersive digital storytelling.
+- Limited emotional branding.
+
+---
+
+## Opportunities for Lauren Palace
+
+Lauren Palace should combine local hospitality with a stronger digital experience and more engaging property presentation.
+
+---
+
+## Key Takeaways
+
+Local expertise combined with excellent digital experiences creates competitive advantage.
+
+---
+
+# 8. Southern Sun Analysis
+
+## Overview
+
+Southern Sun focuses on professional hospitality, conference facilities, business travel, and premium accommodation throughout Southern Africa.
+
+---
+
+## Strengths
+
+- Strong hospitality reputation.
+- Professional presentation.
+- Clear room information.
+- Reliable booking experience.
+
+---
+
+## Weaknesses
+
+- Traditional visual design.
+- Limited storytelling.
+- Less modern user interface.
+
+---
+
+## Opportunities for Lauren Palace
+
+Lauren Palace should deliver a more modern, emotionally engaging, and mobile-first experience while maintaining professional hospitality standards.
+
+---
+
+## Key Takeaways
+
+Professional hospitality can be enhanced through modern digital design.
+
+---
+
+# 9. Comparative Feature Matrix
+
+The following matrix compares key capabilities across leading hospitality platforms and defines the intended implementation for the Lauren Palace Guest House Platform.
+
+| Feature | Booking.com | Airbnb | Marriott | Hilton | Protea | Southern Sun | Lauren Palace Platform |
+|----------|-------------|---------|-----------|---------|---------|---------------|-------------------------|
+| Real-time Availability | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Live Booking Calendar | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Instant Booking Confirmation | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Guest Accounts | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Guest Checkout (No Account Required) | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Secure Online Payments | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Mobile Optimised | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| High Quality Photography | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Room Comparison | Limited | ❌ | ✅ | ✅ | Limited | Limited | ✅ Better |
+| Room Videos | Limited | Limited | Limited | Limited | ❌ | ❌ | ✅ |
+| Virtual Room Tours | Limited | Some | Some | Some | ❌ | ❌ | Future |
+| Verified Reviews | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| WhatsApp Support | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Live Chat | Limited | Limited | Limited | Limited | ❌ | ❌ | Future |
+| Loyalty Programme | Genius | ❌ | Bonvoy | Honors | Limited | Limited | Future |
+| Direct Booking Benefits | Limited | ❌ | ✅ | ✅ | Limited | Limited | ✅ Core Feature |
+| Nearby Attractions | Basic | Excellent | Good | Good | Good | Good | ✅ Enhanced |
+| Interactive Map | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Local Recommendations | Basic | Excellent | Good | Good | Good | Good | ✅ Personalised |
+| Guest Dashboard | Limited | ✅ | ✅ | ✅ | Limited | Limited | ✅ |
+| Booking History | ✅ | ✅ | ✅ | ✅ | Limited | Limited | ✅ |
+| Booking Modifications | ✅ | ✅ | ✅ | ✅ | Limited | Limited | ✅ |
+| Digital Invoices | Limited | Limited | ✅ | ✅ | Limited | Limited | ✅ |
+| Email Confirmations | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| SMS Notifications | Limited | Limited | Limited | Limited | ❌ | ❌ | Future |
+| WhatsApp Notifications | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Personal Guest Welcome | ❌ | Some | Limited | Limited | Limited | Limited | ✅ |
+| Admin Dashboard | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Analytics Dashboard | ✅ | Limited | ✅ | ✅ | Limited | Limited | ✅ |
+| Discount Codes | Limited | Limited | ✅ | ✅ | Limited | Limited | ✅ |
+| Gift Vouchers | ❌ | ❌ | Some | Some | ❌ | ❌ | Future |
+| AI Guest Assistant | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | Future |
+
+---
+
+# 10. Opportunities for Lauren Palace
+
+The competitive analysis demonstrates that Lauren Palace Guest House does not need to compete with global accommodation platforms on scale.
+
+Instead, it should compete by delivering the best possible booking experience for a single property.
+
+The greatest opportunities include:
+
+- Simpler booking process.
+- More personal hospitality.
+- Stronger storytelling.
+- Better room presentation.
+- Faster customer communication.
+- WhatsApp integration.
+- Transparent pricing.
+- Beautiful visual design.
+- Rich local recommendations.
+- Direct relationships with returning guests.
+- Lower booking costs through direct reservations.
+- Greater brand recognition.
+
+Rather than becoming another online travel marketplace, Lauren Palace Guest House should become the preferred destination for guests wishing to book directly with confidence.
+
+---
+
+# 11. Product Vision Summary
+
+Following this competitive analysis, the Lauren Palace Guest House Platform will be designed around five guiding principles.
+
+## 1. Simplicity
+
+Booking accommodation should require as few steps as possible.
+
+---
+
+## 2. Trust
+
+Guests should feel confident before making payment.
+
+---
+
+## 3. Hospitality
+
+The digital experience should reflect the warmth and professionalism guests receive in person.
+
+---
+
+## 4. Performance
+
+The platform should be fast, responsive, accessible, and mobile-first.
+
+---
+
+## 5. Direct Relationships
+
+The platform should encourage long-term guest relationships rather than one-time transactions through third-party marketplaces.
+
+---
+
+These principles will guide every feature defined within the Product Requirements Document.
+
