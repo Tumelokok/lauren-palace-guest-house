@@ -366,5 +366,134 @@ Technology should never replace hospitality—it should strengthen it.
 
 Every feature developed for this platform should support our mission of delivering exceptional hospitality through exceptional digital experiences.
 
+---
+
+# 6. Core Values
+
+The Lauren Palace Guest House platform is built upon a set of core values that guide every business decision, design choice, software feature, and guest interaction.
+
+These values represent the standards that define who we are as a hospitality brand and how we deliver exceptional experiences both online and in person.
+
+---
+
+## Hospitality First
+
+Every guest should feel genuinely welcomed, respected, and valued.
+
+Hospitality extends beyond providing accommodation—it is reflected in every interaction, every booking, every conversation, and every detail of the guest experience.
+
+Technology should enhance hospitality, never replace it.
+
+---
+
+## Excellence Without Compromise
+
+We believe that excellence is achieved through consistency.
+
+Whether preparing a room, responding to an enquiry, processing a booking, or designing a webpage, every detail should reflect professionalism and quality.
+
+Small details create memorable experiences.
+
+---
+
+## Trust Through Transparency
+
+Guests should always know exactly what to expect.
+
+We are committed to:
+
+- Clear pricing
+- Honest communication
+- Transparent booking policies
+- Secure payment processes
+- Reliable reservation confirmations
+
+Trust is earned through openness and consistency.
+
+---
+
+## Simplicity by Design
+
+Booking accommodation should never feel complicated.
+
+Every interaction should be intuitive, fast, and easy to understand.
+
+From website navigation to online payments, simplicity should reduce effort while increasing confidence.
+
+If a process can be made simpler without sacrificing quality, it should be improved.
+
+---
+
+## Comfort in Every Detail
+
+Comfort goes beyond physical accommodation.
+
+Guests should feel comfortable:
+
+- Before arriving
+- During booking
+- Throughout their stay
+- After departure
+
+Every touchpoint should contribute to a sense of relaxation, confidence, and peace of mind.
+
+---
+
+## Continuous Improvement
+
+We believe there is always an opportunity to improve.
+
+Guest feedback, staff observations, technological innovation, and operational insights should continuously shape the future of Lauren Palace Guest House.
+
+Improvement is an ongoing commitment rather than a destination.
+
+---
+
+## Integrity and Accountability
+
+We operate with honesty, professionalism, and responsibility.
+
+Every commitment made to guests should be honoured.
+
+When challenges arise, they should be addressed with transparency, respect, and a genuine commitment to finding solutions.
+
+---
+
+## Innovation with Purpose
+
+Technology should solve real problems.
+
+Every new feature added to the Lauren Palace Guest House platform should improve efficiency, simplify operations, or enhance the guest experience.
+
+Innovation should always serve people first.
+
+---
+
+## Building Lasting Relationships
+
+Our goal is not simply to welcome guests once.
+
+Our goal is to build lasting relationships that encourage guests to return, recommend Lauren Palace to others, and become lifelong supporters of the brand.
+
+Every interaction should strengthen trust and loyalty.
+
+---
+
+## Living Our Values
+
+These values should guide every aspect of Lauren Palace Guest House, including:
+
+- Business operations
+- Customer service
+- Website design
+- Software development
+- Booking processes
+- Communication
+- Marketing
+- Staff interactions
+- Future product development
+
+They represent the standard by which every future decision should be measured.
+
 
 > *"Deliver exceptional hospitality before the guest even arrives."*
