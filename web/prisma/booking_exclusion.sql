@@ -1,0 +1,11 @@
+-- PostgreSQL exclusion constraint to prevent overlapping bookings for the same physical room.
+-- Uses daterange for DATE columns and excludes CANCELLED/NO_SHOW bookings.
+-- This constraint is applied via Prisma migration (see 20240812_add_booking_exclusion.sql).
+--
+-- Constraint logic:
+-- - Only applies to active bookings (status NOT IN CANCELLED, NO_SHOW)
+-- - Uses daterange to compare check-in and check-out dates (half-open interval [checkIn, checkOut))
+-- - roomId must be non-null and equal for conflict detection
+-- - Booking overlap is detected when ranges overlap (&&) for the same room
+--
+-- Note: This file documents the constraint; the actual SQL is in the Prisma migration.

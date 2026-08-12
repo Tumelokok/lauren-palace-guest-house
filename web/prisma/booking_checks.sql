@@ -1,0 +1,4 @@
+-- Enforce that checkOut > checkIn for bookings (date comparison).
+-- This constraint is applied via Prisma migration (see 20240812_add_booking_checks.sql).
+--
+-- Note: This file documents the constraint; the actual SQL is in the Prisma migration.

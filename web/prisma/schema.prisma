@@ -1,0 +1,362 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Enums
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CHECKED_IN
+  CHECKED_OUT
+  CANCELLED
+  NO_SHOW
+}
+
+enum RoomStatus {
+  AVAILABLE
+  RESERVED
+  OCCUPIED
+  CLEANING
+  MAINTENANCE
+  OUT_OF_SERVICE
+}
+
+enum PaymentStatus {
+  PENDING
+  COMPLETED
+  PARTIAL
+  FAILED
+  REFUNDED
+}
+
+enum DiscountType {
+  FIXED
+  PERCENTAGE
+}
+
+enum TaskStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+enum RewardTransactionType {
+  EARN
+  SPEND
+  ADJUSTMENT
+}
+
+enum RewardRedemptionStatus {
+  PENDING
+  COMPLETED
+  CANCELLED
+}
+
+// Authorization
+model Role {
+  id          String   @id @default(uuid()) @db.Uuid
+  name        String   @unique
+  description  String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  users       User[]   @relation("UserRoles")
+  rolePerms   RolePermission[]
+}
+
+model Permission {
+  id          String   @id @default(uuid()) @db.Uuid
+  key         String   @unique
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  rolePerms   RolePermission[]
+  userPerms   UserPermission[]
+}
+
+model RolePermission {
+  id           String   @id @default(uuid()) @db.Uuid
+  role         Role     @relation(fields: [roleId], references: [id])
+  roleId       String   @db.Uuid
+  permission   Permission @relation(fields: [permissionId], references: [id])
+  permissionId String   @db.Uuid
+  createdAt    DateTime @default(now())
+  @@unique([roleId, permissionId])
+}
+
+model User {
+  id            String   @id @default(uuid()) @db.Uuid
+  email         String   @unique
+  fullName      String?
+  phone         String?
+  roles         Role[]   @relation("UserRoles")
+  userPerms     UserPermission[]
+  passwordHash  String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  bookings      Booking[]
+  passwordResetTokens PasswordResetToken[]
+  promoUsages          PromoCodeUsage[]
+  rewardAccounts       RewardAccount[]
+  rewardTransactions   RewardTransaction[]
+  rewardRedemptions    RewardRedemption[]
+}
+
+model UserPermission {
+  id           String   @id @default(uuid()) @db.Uuid
+  user         User     @relation(fields: [userId], references: [id])
+  userId       String   @db.Uuid
+  permission   Permission @relation(fields: [permissionId], references: [id])
+  permissionId String   @db.Uuid
+  createdAt    DateTime @default(now())
+  @@unique([userId, permissionId])
+}
+
+model PasswordResetToken {
+  id        String   @id @default(uuid()) @db.Uuid
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String   @db.Uuid
+  // Store a HASH of the reset token, not the plaintext token
+  tokenHash String   @unique
+  expiresAt DateTime
+  used      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+// Rooms
+model RoomType {
+  id                 String             @id @default(uuid()) @db.Uuid
+  slug               String             @unique
+  name               String
+  description        String?
+  capacity           Int
+  verifiedDirectPrice Boolean           @default(false)
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+  pricings           RoomTypePricing[]
+  rooms              Room[]
+  bookings           Booking[]
+  promoCodes         PromoCode[]
+}
+
+model RoomTypePricing {
+  id            String   @id @default(uuid()) @db.Uuid
+  roomType      RoomType @relation(fields: [roomTypeId], references: [id])
+  roomTypeId    String   @db.Uuid
+  // All money fields are stored as integer cents
+  currency      String   @default("ZAR")
+  basePrice     Int
+  websitePrice  Int
+  platformFee   Int?     @default(0)
+  maintenanceFee Int?    @default(0)
+  createdAt     DateTime @default(now())
+  effectiveFrom DateTime?
+  effectiveTo   DateTime?
+}
+
+model Room {
+  id        String     @id @default(uuid()) @db.Uuid
+  roomNumber String?
+  roomType  RoomType   @relation(fields: [roomTypeId], references: [id])
+  roomTypeId String    @db.Uuid
+  status    RoomStatus @default(AVAILABLE)
+  active    Boolean    @default(true)
+  note      String?
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  bookings  Booking[]
+  housekeepingTasks HousekeepingTask[]
+}
+
+// Booking
+model Booking {
+  id             String        @id @default(uuid()) @db.Uuid
+  reference      String        @unique
+  customer       User?         @relation(fields: [customerId], references: [id])
+  customerId     String?       @db.Uuid
+  room           Room?         @relation(fields: [roomId], references: [id])
+  roomId         String?       @db.Uuid
+  roomType       RoomType      @relation(fields: [roomTypeId], references: [id])
+  roomTypeId     String        @db.Uuid
+  checkIn        DateTime      @db.Date
+  checkOut       DateTime      @db.Date
+  guestCount     Int
+  status         BookingStatus @default(PENDING)
+  pricingSnapshot Json
+  source         String?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  payments       Payment[]
+  promoUsages    PromoCodeUsage[]
+  rewardTransactions RewardTransaction[]
+  rewardRedemptions  RewardRedemption[]
+  housekeepingTasks  HousekeepingTask[]
+  @@index([roomId])
+  @@index([roomTypeId])
+}
+
+// Payments
+model Payment {
+  id                String        @id @default(uuid()) @db.Uuid
+  booking           Booking?      @relation(fields: [bookingId], references: [id])
+  bookingId         String?       @db.Uuid
+  amountDue         Int
+  amountPaid        Int
+  amountRefunded    Int?           @default(0)
+  currency          String        @default("ZAR")
+  status            PaymentStatus
+  provider          String
+  providerReference String?
+  paymentMethod     String?
+  notes             String?
+  createdAt         DateTime      @default(now())
+  updatedAt         DateTime      @updatedAt
+  @@index([bookingId])
+}
+
+// Promotions
+model PromoCode {
+  id                String   @id @default(uuid()) @db.Uuid
+  code              String   @unique
+  description       String?
+  discountType      DiscountType
+  fixedAmount       Int?     // cents
+  percentage        Int?     // 0-100
+  currency          String?  @default("ZAR")
+  validFrom         DateTime?
+  validTo           DateTime?
+  totalUsageLimit   Int?
+  minBookingAmount  Int?     // cents
+  roomTypeId        String?  @db.Uuid
+  roomType          RoomType? @relation(fields: [roomTypeId], references: [id])
+  active            Boolean  @default(true)
+  creatorId         String?  @db.Uuid
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  usages            PromoCodeUsage[]
+}
+
+model PromoCodeUsage {
+  id           String   @id @default(uuid()) @db.Uuid
+  promo        PromoCode @relation(fields: [promoId], references: [id])
+  promoId      String   @db.Uuid
+  customer     User?    @relation(fields: [customerId], references: [id])
+  customerId   String?  @db.Uuid
+  booking      Booking? @relation(fields: [bookingId], references: [id])
+  bookingId    String?  @db.Uuid
+  discountAmount Int    // cents applied
+  createdAt    DateTime @default(now())
+  @@index([promoId])
+  @@index([customerId])
+  @@unique([promoId, bookingId])
+}
+
+// Rewards
+model RewardTier {
+  id               String   @id @default(uuid()) @db.Uuid
+  name             String   @unique
+  bookingThreshold Int
+  description      String?
+  benefits         Json?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model RewardAccount {
+  id             String   @id @default(uuid()) @db.Uuid
+  customer       User     @relation(fields: [customerId], references: [id])
+  customerId     String   @db.Uuid
+  pointsBalance  Int      @default(0)
+  lifetimePoints Int      @default(0)
+  currentTierId  String?  @db.Uuid
+  bookingsCount  Int      @default(0)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  @@unique([customerId])
+}
+
+model RewardDefinition {
+  id               String   @id @default(uuid()) @db.Uuid
+  name             String
+  description      String?
+  pointsValue      Int?
+  discountAmount   Int?
+  discountPercent  Int?
+  rewardType       String?
+  active           Boolean  @default(true)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  rewardRedemptions RewardRedemption[]
+}
+
+model RewardTransaction {
+  id               String                 @id @default(uuid()) @db.Uuid
+  customer         User                   @relation(fields: [customerId], references: [id])
+  customerId       String                 @db.Uuid
+  booking          Booking?               @relation(fields: [bookingId], references: [id])
+  bookingId        String?                @db.Uuid
+  points           Int
+  reason           String?
+  transactionType  RewardTransactionType
+  createdAt        DateTime               @default(now())
+}
+
+model RewardRedemption {
+  id               String                 @id @default(uuid()) @db.Uuid
+  customer         User                   @relation(fields: [customerId], references: [id])
+  customerId       String                 @db.Uuid
+  rewardDefinition RewardDefinition       @relation(fields: [rewardDefinitionId], references: [id])
+  rewardDefinitionId String               @db.Uuid
+  booking          Booking?               @relation(fields: [bookingId], references: [id])
+  bookingId        String?                @db.Uuid
+  status           RewardRedemptionStatus @default(PENDING)
+  redeemedAt       DateTime?
+  createdAt        DateTime               @default(now())
+}
+
+// Housekeeping
+model HousekeepingTask {
+  id            String    @id @default(uuid()) @db.Uuid
+  room          Room      @relation(fields: [roomId], references: [id])
+  roomId        String    @db.Uuid
+  booking       Booking?  @relation(fields: [bookingId], references: [id])
+  bookingId     String?   @db.Uuid
+  assignedToId  String?   @db.Uuid
+  taskType      String
+  status        TaskStatus @default(PENDING)
+  scheduledTime DateTime?
+  startedTime   DateTime?
+  completedTime DateTime?
+  notes         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+
+// Audit & settings
+model AuditLog {
+  id        String   @id @default(uuid()) @db.Uuid
+  actorId   String?  @db.Uuid
+  action    String
+  entity    String
+  entityId  String?
+  metadata  Json?
+  ipAddress String?
+  userAgent String?
+  createdAt DateTime @default(now())
+}
+
+model SystemSetting {
+  id          String   @id @default(uuid()) @db.Uuid
+  key         String   @unique
+  value       Json
+  description String?
+  updatedById String?  @db.Uuid
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
