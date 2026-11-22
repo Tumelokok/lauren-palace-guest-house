@@ -1,0 +1,42 @@
+name: Website problem
+description: Report a problem on the Lauren Palace Guest House website.
+title: "[Website] "
+body:
+  - type: markdown
+    attributes:
+      value: This report is public. Use the page name or public URL. Leave out guest details, booking references, private links and contact information.
+  - type: input
+    id: page
+    attributes:
+      label: Which page or button?
+      placeholder: Room details — enquiry button
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do, and what happened?
+      placeholder: I opened a room on my phone, tapped the enquiry button and saw…
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser, if known
+      placeholder: iPhone using Safari
+  - type: dropdown
+    id: impact
+    attributes:
+      label: How did it affect you?
+      options:
+        - I could not complete the task
+        - I found another way to complete it
+        - Appearance or wording only
+    validations:
+      required: true
